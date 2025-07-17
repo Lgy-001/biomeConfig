@@ -1,0 +1,34 @@
+{
+  // 启用保存时自动格式化
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  // 设置默认格式化器为 Biome 插件（插件 ID）
+  "editor.defaultFormatter": "biomejs.biome",
+
+  // 针对 JavaScript 使用 Biome 作为格式化器
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+
+  // 针对 TypeScript 使用 Biome 作为格式化器
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+
+  // 针对 JSON 使用 Biome 作为格式化器
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+
+  // 如果你使用 Vue，可以加上这一段
+  // "[vue]": {
+  //   "editor.defaultFormatter": "biomejs.biome"
+  // },
+
+  // 防止与 Prettier 等插件冲突（可选）
+  // 建议卸载或禁用 Prettier 插件
+  // "prettier.disableLanguages": ["javascript", "typescript", "json"]
+}
